@@ -4,9 +4,9 @@ import org.junit.Test;
 public class MainClassTest extends MainClass {
 
     @Test
-    public void testGetClassNumber(){
-        int a = this.getClassNumber();
-        Assert.assertTrue("class_number <= 45",a > 45);
+    public void testGetClassString() {
+        String word = this.getClassString();
+        Assert.assertTrue("class string dont have 'hello'", word.contains("Hello") | word.contains("hello"));
     }
 
 }
